@@ -1,0 +1,83 @@
+/* Përdorim një foto si sfond për të gjithë faqen */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.shutterstock.com/shutterstock/photos/2052894734/display_1500/stock-vector-quiz-and-question-marks-trivia-night-quiz-symbol-neon-sign-night-online-game-with-questions-2052894734.jpg'); /* Shto linkun e fotos këtu */
+    background-size: cover; /* Bën që fotoja të mbushë të gjithë ekranin */
+    background-position: center; /* Qendron në qendër të ekranit */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Stil për quizin me një sfond të bardhë ose transparent */
+.quiz-container {
+    background-color: lightblue; /* Sfond i bardhë i lehtë me transparencë */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Përdorim përqindje për një dizajn më fleksibël */
+    max-width: 1200px; /* Kufizohet për ekranet më të mëdhenj */
+    text-align: center;
+    min-height: 500px;
+}
+
+/* Përshtatje për tituj dhe tekste të tjera për t’u dukur më të qarta mbi foto */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Hije për të bërë tekstin më të dukshëm mbi sfondin */
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#timer {
+    font-size: 18px;
+    color: #ff0000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Stilizimi i opsioneve */
+li {
+    background-color: whitesmoke;
+    margin: 8px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Stil për butonin "Next" */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Shtimi i një efekti në faqen e rezultateve */
+.result-container {
+    text-align: center;
+    padding-top: 20px;
+}
